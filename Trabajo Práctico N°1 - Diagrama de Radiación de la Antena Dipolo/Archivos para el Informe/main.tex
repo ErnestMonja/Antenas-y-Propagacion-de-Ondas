@@ -39,12 +39,12 @@
     {\Large ANTENAS Y PROPAGACIÓN DE ONDAS\\[1cm]}
 
     \rule{\textwidth}{0.5pt} \\[0.5cm]
-    {\Large \textbf{Trabajo Práctico Teórico N°1} \\[0.3cm]}
+    {\Large \textbf{Trabajo Práctico N°1} \\[0.3cm]}
     {\Large \textbf{Diagramas de Radiación de la Antena Dipolo} \\[0.3cm]}
     \rule{\textwidth}{0.5pt} \\[1cm]
 
 \begin{tabular}{l l}
-\textbf{Profesor Titular:} & Ing. Jose Luis Amado.
+\textbf{Profesor Titular:} & Ing. Jose Luis Amado. \\
 
 \\
 \textbf{Alumno:} Monja, Ernesto Joaquín. \\
@@ -75,7 +75,7 @@ El presente trabajo práctico tiene como objetivo principal el estudio y la visu
 
 \section{Desarrollo}
 \subsection{Marco Teórico}
-Se tiene que en un eje cartesiano tridimensional definido por los ejes $x$, $y$ y $z$ tal como el que muestra la \autoref{fig:fig_1}:
+En la \autoref{fig:fig_1} se presenta un sistema de coordenadas cartesianas tridimensionales definido por los ejes $x$, $y$ y $z$:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{Figura 1.png}
@@ -83,7 +83,7 @@ Se tiene que en un eje cartesiano tridimensional definido por los ejes $x$, $y$ 
     \label{fig:fig_1}
 \end{figure}
 
-Si se coloca una antena dipolo de longitud $L$ en el centro de los ejes de referencia, se puede desarrollar y obtener las magnitudes de los campos eléctricos y magnéticos en coordenadas polares según: [2]
+Si se coloca una antena dipolo de longitud $L$ en el centro de los ejes de referencia, se pueden desarrollar y obtener las expresiones para las magnitudes de los campos eléctricos y magnéticos en coordenadas esféricas según: [2]
 \begin{equation}
     \begin{cases}
         \hat{E_{\theta}} = \frac{j \eta_{0} \hat{I}}{2 \pi r} e^{-j \beta_{0}r} \left[ \frac{\cos\left( \frac{\beta_{0}L}{2}\cos(\theta) \right) - \cos\left( \frac{\beta_{0}L}{2} \right)}{\sin(\theta)} \right] \ \left[\frac{V}{m}\right] \\[10pt]
@@ -91,22 +91,20 @@ Si se coloca una antena dipolo de longitud $L$ en el centro de los ejes de refer
     \end{cases}
     \label{eq_1}
 \end{equation}
-\\
 
-Nótese que en ambas ecuaciones de \autoref{eq_1}, que existe un termino común remarcado en corchetes el cual se denomina \textit{Factor de Forma} definido entonces por:
+Nótese que en ambas ecuaciones de la \autoref{eq_1} existe un término común encerrado entre corchetes, el cual se denomina \textit{Factor de Forma} y se define como:
 \begin{equation}
     \left| F(\theta) \right| = \left| \frac{\cos\left( \frac{\beta_{0}L}{2}\cos(\theta) \right) - \cos\left( \frac{\beta_{0}L}{2} \right)}{\sin(\theta)}\right|
     \label{eq_2}
 \end{equation}
-\\
 
-Reemplazando a $\beta_{0} = \frac{2\pi}{\lambda}$, se obtiene una expresión del \textit{Factor de Forma} la cual depende de la longitud de onda:
+Al reemplazar $\beta_{0} = \frac{2\pi}{\lambda}$ en la \autoref{eq_2}, se llega a obtener una expresión del \textit{Factor de Forma} que depende de la longitud de onda tal que:
 \begin{equation}
     \left| F(\theta) \right| = \left| \frac{\cos\left( \frac{\pi L}{\lambda}\cos(\theta) \right) - \cos\left( \frac{\pi L}{\lambda} \right)}{\sin(\theta)}\right|
     \label{eq_3}
 \end{equation}
 
-Como se ha mencionado en la introducción, las expresiones del Factor de Forma $F(\theta)$ son la base para trazar y definir los diagramas de radiación de una antena, los cuales se proponen investigar en la sección siguiente.
+Como se ha mencionado en la introducción, las expresiones del Factor de Forma $F(\theta)$ son la base para trazar y definir los diagramas de radiación de una antena, los cuales se analizan en la sección siguiente.
 
 
 
@@ -215,6 +213,6 @@ De acuerdo a las gráficas obtenidas en la sección precedente, se pueden realiz
 
     \item \underline{$[2]$:} Johnk, C. T. A. (1988). Radiation from antennas in free space (Cap. 11). En \textit{Engineering Electromagnetic Fields and Waves} (2.ª ed.). John Wiley \& Sons. Recuperado de \url{http://linux0.unsl.edu.ar/~froma/libros/Jhonk2.pdf}
 
-    \item \underline{$[3]$:} 
+    \item \underline{$[3]$:} Monja, E. (s.f.). \textit{Diagramas de Radiación en Python.py} (Versión principal) [Código de software]. GitHub. \url{https://github.com/ErnestMonja/Antenas-y-Propagacion-de-Ondas/blob/main/Trabajo%20Pr%C3%A1ctico%20N%C2%B01%20-%20Diagrama%20de%20Radiaci%C3%B3n%20de%20la%20Antena%20Dipolo/Diagramas%20de%20Radiaci%C3%B3n%20en%20Python.py}
 \end{itemize}
 \end{document}
